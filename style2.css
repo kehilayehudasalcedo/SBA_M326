@@ -1,0 +1,50 @@
+:root {
+--neutral-900: hsl(33, 15%, 15%);
+
+--neutral-100: hsl(35, 60%, 96%);
+--neutral-50: hsl(40, 60%, 98%);
+--neutral-0: hsl(0, 0%, 100%);
+--sun-500: hsl(42, 83%, 58%);
+--sun-200: hsl(45, 100%, 74%);
+--terracotta-600: hsl(15, 74%, 41%);
+--terracotta-500: hsl(18, 62%, 47%);
+--blue-500: hsl(230, 49%, 56%);
+--rose-500: hsl(340, 48%, 52%);
+}
+
+body {
+font-family: 'DM Sans', sans-serif;
+font-size: 14px;
+color: var(--neutral-900);
+}
+
+.font-serif { font-family: 'Fraunces', serif; } /* duda1 */
+.font-mono { font-family: 'DM Mono', monospace; }
+
+.sidebar-bg { background-color: var(--neutral-50); }
+.main-bg { background-color: var(--neutral-100); }
+
+.text-terracotta { color: var(--terracotta-500); }
+.text-blue { color: var(--blue-500); }
+.text-rose { color: var(--rose-500); }
+
+.active-nav {
+background-color: var(--neutral-0);
+color: var(--neutral-900);
+font-weight: 600;
+box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.badge-terracotta { background-color: var(--terracotta-600); }
+
+.weather-card {
+background: linear-gradient(135deg, var(--sun-200), var(--sun-500));
+}
+
+.host-card {
+background-color: var(--terracotta-600);
+}
+
+@media (min-width: 768px) {
+.receipt-card { transform: rotate(-2deg); }
+.host-card { transform: rotate(2deg); margin-left: -15px; }
+}
