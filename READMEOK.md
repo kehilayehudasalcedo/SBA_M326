@@ -1,29 +1,23 @@
 # Frontend Mentor - Hotel booking confirmation page solution
-
 This is my solution to the Hotel booking confirmation page challenge on Frontend Mentor
 https://www.frontendmentor.io/challenges/hotel-booking-confirmation-page
 
-## Overview
-
-### The challenge
+# The challenge
 For this project, I built a responsive hotel booking confirmation page for "Maison Soleil". 
 
-## My process
-
-### Approach and Customizations
-To build this page, I followed these steps:
+# Approach and Customizations
+In brief, to build this page, I followed these steps:
 .1. HTML Structure - I organized the original text into semantic HTML tags (<aside>, <main>, <header>, <section>, and <article>).
 .2. Bootstrap - I used Bootstrap's 12-column grid system to separate the left sidebar from the main content. I also used Bootstrap cards, buttons, badges, and flexbox utilities (d-flex, justify-content-between)
 .3. Custom CSS (style2.css) - I created a small CSS file to add the exact HSL colors from style-guide.
 
-## Challenges and Solutions
+# Challenges and Solutions
 
-- **Challenge 1: Making the sidebar menu work on mobile phones.**
-  - *How I solved it:* On desktop, the sidebar stays open, but on phones, it needs to hide behind a button. I read the Bootstrap documentation and used the `collapse` and `d-lg-block` classes on the `<nav>` tag, connecting it to the mobile button using `id="guestNav"` and `data-bs-target="#guestNav"`.
-- **Challenge 2: Tilting the receipt and welcome cards without breaking the mobile view.**
-  - *How I solved it:* Tilting the cards on a small phone screen made them overlap awkwardly. I used a CSS media query (`@media (min-width: 768px)`) so the `transform: rotate()` effect only turns on for tablets and desktop computers.
-- **Challenge 3: Learning the layout tools outside of class.**
-  - *How I solved it:* Since we did not have enough hands-on practice with these specific Bootstrap components in class, I used VS Code, Live Server, and the official Bootstrap documentation on my own time to test how each class worked until the layout matched the design images.
+.1  Tilting the receipt and welcome cards without breaking the mobile view.
+Tilting the cards on a small phone screen made them overlap awkwardly. I used a CSS media query (@media (min-width: 768px)) so the transform: rotate() effect only turns on for tablets and desktop computers.
+
+.2 Learning the layout tools outside of class.
+Since we did not have enough hands-on practice with these specific Bootstrap components in class, I used VS Code, Live Server, and the official Bootstrap documentation on my own time to test how each class worked until the layout matched the design images.
 
 
 ## Reflection
